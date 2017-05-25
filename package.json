@@ -1,15 +1,15 @@
 {
-    "name": "express-webpack-hmr-react",
+    "name": "Asiainfo-react",
     "version": "2.0.0",
     "description": "Asiainfo erp Internal use system",
     "main": "index.js",
     "scripts": {
         "start": "npm run devServer & npm run devClient",
         "start-tools": "npm start",
-        "publish": "export NODE_ENV=production && webpack && node server.js",
-        "cleanPublish": "rimraf publish && npm run publish",
-        "devServer": "export NODE_ENV=development && export PORT=9000 && supervisor -i './source' server.js",
-        "devClient": "export NODE_ENV=development && export PORT=9000 && supervisor -w './devServer.js' devServer.js",
+        "push": "export NODE_ENV=production && webpack && node server.js",
+        "cleanPush": "rimraf push && npm run push",
+        "devServer": "export NODE_ENV=development && export PORT=9000 && supervisor -i './source,./entryFile.config.js,./webpack.base.config.js,./webpack.config.js' server.js",
+        "devClient": "export NODE_ENV=development && export PORT=9000 && supervisor -w './devServer.js,./entryFile.config.js,./webpack.base.config.js,./webpack.config.js' devServer.js",
         "getApi": "cd './api' && node getApi.js"
     },
     "keywords": [

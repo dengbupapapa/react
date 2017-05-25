@@ -60,7 +60,7 @@
 	* #### package scrpits
 		* 1.npm star 启动开发环境
 		* 2.npm start-tools 启动开发环境并打开store监听视图模块（有点问题）
-		* 3.npm run publish 打包并发布
+		* 3.npm run push 打包并发布
 		* 4.npm run getApi 生成代理接口
 
 	* #### contrller

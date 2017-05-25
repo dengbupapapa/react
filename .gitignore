@@ -2,3 +2,5 @@ node_modules
 test
 publish
 npm-debug.log
+.DS_Store
+.gitignore

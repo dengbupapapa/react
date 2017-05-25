@@ -4,7 +4,7 @@ import {
 
 import img from 'iStatic/banner1.jpg';
 
-import style from './index.less';
+import './index.less';
 
 import {
     IndexLink,
@@ -31,7 +31,7 @@ class index extends Component {
             disabled
         } = this.state;
         return (
-            <div className={style.div}>
+            <div className='div'>
                 index<input className='input-main focus'/>
                 <div>
                     <Button type="primary">Primary</Button>
@@ -44,7 +44,7 @@ class index extends Component {
                     <Slider range defaultValue={[20, 50]} disabled={disabled} />
                     Disabled: <Switch size="small" checked={disabled} onChange={this.handleDisabledChange} />
                 </div>
-                <img className={style.img} src={img}/>
+                <img className='img' src={img}/>
                 <Link to='/index'>workindex</Link>
                 {' '}
                 <Link to='/index/workDemo'>workDemo</Link>
